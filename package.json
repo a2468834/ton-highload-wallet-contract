@@ -1,6 +1,6 @@
 {
   "name": "ton-highload-wallet-contract",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "TON Highload Wallet Contract",
   "main": "dist/index.js",
   "files": [
@@ -10,6 +10,7 @@
     "docs": "rm -fr docs && typedoc src/index.ts",
     "build": "rm -rf dist && tsc --declaration",
     "release": "npm run build && npm publish",
+    "postinstall": "npm run build",
     "test": "jest --verbose --runInBand"
   },
   "keywords": [
@@ -22,7 +23,7 @@
   "author": "ndatg",
   "license": "MIT",
   "repository": "https://github.com/ndatg/ton-highload-wallet-contract",
-  "devDependencies": {
+  "dependencies": {
     "@ton/core": "^0.54.0",
     "@ton/crypto": "^3.2.0",
     "@ton/ton": "^13.10.0",
