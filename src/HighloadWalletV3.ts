@@ -1,6 +1,6 @@
 import { Address, beginCell, Cell, Contract, contractAddress, ContractProvider, internal, MessageRelaxed, OutAction, OutActionSendMsg, Sender, SendMode, storeMessageRelaxed, storeOutList } from '@ton/core';
 import { Maybe } from "@ton/core/dist/utils/maybe";
-import { sign } from "ton-crypto";
+import { sign } from "@ton/crypto";
 import { HighloadQueryId } from "./HighloadQueryId";
 import { TonClient, TonClientParameters } from '@ton/ton';
 
